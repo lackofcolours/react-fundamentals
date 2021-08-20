@@ -32,13 +32,15 @@
     // const elementType = 'div'
     // const reactElement = React.createElement(elementType, elementProps)
     // ReactDOM.render(reactElement, rootElement)
+    const helloElement = React.createElement('span', null, 'Hello')
+    const worldElement = React.createElement('span', null, 'World')
 
     const element = React.createElement(
       'div',
       {className: 'container'},
-      React.createElement('span', {children: 'Hello'}),
+      helloElement,
       ' ',
-      React.createElement('span', {children: 'World'}),
+      worldElement,
     )
 
     ReactDOM.render(element, rootElement)
