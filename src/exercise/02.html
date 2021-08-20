@@ -23,13 +23,21 @@
     // with these React API calls
     // 💰 The example in the markdown file should be a good hint for you.
 
-    const elementProps = {
+    // Working solution 1
+    // const elementProps = {
+    //  children: 'Hello world!',
+    //  className: 'container',
+    // }
+
+    // const elementType = 'div'
+    // const reactElement = React.createElement(elementType, elementProps)
+    // ReactDOM.render(reactElement, rootElement)
+
+    const element = React.createElement('div', {
       children: 'Hello world!',
       className: 'container',
-    }
+    })
 
-    const elementType = 'div'
-    const reactElement = React.createElement(elementType, elementProps)
-    ReactDOM.render(reactElement, rootElement)
+    ReactDOM.render(element, rootElement)
   </script>
 </body>
