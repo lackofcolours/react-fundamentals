@@ -5,9 +5,10 @@ import * as React from 'react'
 import '../box-styles.css'
 
 const Box = ({size = '', style, ...otherProps}) => {
+  const sizeClassName = size ? `box--${size}` : ''
   return (
     <div
-      className={size ? `box box--${size}` : `box`}
+      className={`box ${sizeClassName}`}
       style={{fontStyle: 'italic', ...style}}
       {...otherProps}
     />
